@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* styles.css
+ * CSS styling override for portfolio
+ * Author: Christine Holden
+ * April 2019
+ */
+
+:root {
+  --red-shade: #b62521; 
+  --blue-shade: #055880;
+  --dark-shade: #212529;
+  --grey-shade: #2e3140;
+  --cream-shade: #fcf2e3;
+  --text-color: #fffdfe;
+}
+
+/* General styles */
+body {
+    font-family: Optima, Helvetica, Arial, sans-serif;
+    background-color: var(--grey-shade);
+}
+.section-title,
+.section-text {
+	color: var(--text-color)
+}
+article a:hover {
+	text-decoration: none;	
+}
+
+/* Navigation */
+#site-nav {
+	background-color: var(--cream-shade);
+	font-size:1.25rem;
+}
+#site-nav a:hover, #site-nav a:focus{
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    height: 90vh;
+}
+#intro {
+	background-image: url(../images/watercolour.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 90vh;
+	width: 100%;	
+}
+.identifier {
+	background-color: rgba(252, 242, 227, 0.75);
+}
+
+/* Work Section */
+#work {
+	max-width: 1355px;
+	margin: auto;
+	background-color: var(--grey-shade);
+}
+.fa-chevron-down {
+  -webkit-text-stroke: 3px var(--grey-shade); 
+  color: var(--text-color);
+}
+
+.folio-item {
+	transition: all 0.3s ease-out;
+	max-width: 350px;
+	
+}
+.folio-item:hover {
+	transform: scale(1.1) translateY(-3px);
+}
+.folio-item a{
+color: var(--dark-shade);
+}
+
+/* About Section */
+#about {
+	background-color: var(--blue-shade);
+}
+.profile-photo {
+	max-width: 290px;
+}
+
+/* Contact Section*/
+.form-contact {
+	max-width: 690px;
+	margin: auto;
+}
+.button-send {
+	color: var(--text-color);
+	background-color: var(--blue-shade);
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+.button-send:hover {
+	background-color: var(--cream-shade);
+	color: var(--dark-shade);
+}
+
+/* Footer */
+#site-footer {
+	background-color: var(--cream-shade);
+	font-size: 1.25rem;
+}
+.icon-link{
+	transition: all 0.3s ease-out;
+	max-width: 390px;
+}
+.icon-link:hover {
+	transform: scale(1.1) translateY(-3px);
+}
+
+#childcare-intro {
+	background-image: url(../images/watercolour.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 90vh;
+	width: 100%;	
+}
+
+/* Media Queries*/
+@media only screen and (min-width: 544px) {
+	header {
+		min-height: 94vh;
+	}
+	#intro {
+		min-height: 94vh;	
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+	.identifier h1 {
+		font-size: 3rem;
+	}
+	.identifier h2 {
+		font-size: 2.5rem;
+	}
+
+}
