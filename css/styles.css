@@ -41,7 +41,7 @@ header {
     height: 90vh;
 }
 #intro {
-	background-image: url(./watercolour.jpg);
+	background-image: url(watercolour.jpg);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
